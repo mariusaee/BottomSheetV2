@@ -17,14 +17,6 @@ class BottomSheetViewController: UIViewController {
 
 extension BottomSheetViewController {
     private func configureTextField() {
-        let myTextField = UITextField(frame:CGRect(
-            x: 40,
-            y: 100,
-            width: 300,
-            height: 50))
-        
-        myTextField.placeholder = "Type something"
-        myTextField.borderStyle = .roundedRect
         
         let myLabel = UILabel(frame:CGRect(
             x: 40,
@@ -35,7 +27,15 @@ extension BottomSheetViewController {
         myLabel.textAlignment = .center
         myLabel.font = .boldSystemFont(ofSize: 20)
         
-        view.addSubview(myTextField)
+        let myTextField = UITextField(frame:CGRect(
+            x: 40,
+            y: 100,
+            width: 300,
+            height: 50))
+        myTextField.placeholder = "Type something"
+        myTextField.borderStyle = .roundedRect
+        
         view.addSubview(myLabel)
+        view.addSubview(myTextField)
     }
 }
