@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBAction func showSheetPressed() {
         let bottomSheetVC = BottomSheetViewController()
         if let sheet = bottomSheetVC.sheetPresentationController {
-            sheet.detents = [.medium(), .large()]
+            sheet.detents = [.medium()]
         }
         present(bottomSheetVC, animated: true)
     }
