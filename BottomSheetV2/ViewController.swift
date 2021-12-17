@@ -17,7 +17,6 @@ class ViewController: UIViewController {
         present(bottomSheetVC, animated: true)
     }
     
-    
     @IBAction func showTablePressed() {
         let tableVC = TableViewController()
         if let sheet = tableVC.sheetPresentationController {
@@ -25,11 +24,5 @@ class ViewController: UIViewController {
         }
         present(tableVC, animated: true)
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    
 }
 
