@@ -9,7 +9,23 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
-    private let imageNames = ["folder", "paperplane", "tray", "doc", "note", "calendar", "book", "ticket", "link", "person", "command", "option", "alt", "globe", "moon"]
+    private let imageNames = [
+        "folder",
+        "paperplane",
+        "tray",
+        "doc",
+        "note",
+        "calendar",
+        "book",
+        "ticket",
+        "link",
+        "person",
+        "command",
+        "option",
+        "alt",
+        "globe",
+        "moon"
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
