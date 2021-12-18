@@ -9,20 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBAction func showSheetPressed() {
-        let bottomSheetVC = BottomSheetViewController()
-        if let sheet = bottomSheetVC.sheetPresentationController {
-            sheet.detents = [.medium(), .large()]
-        }
-        present(bottomSheetVC, animated: true)
-    }
-    
     @IBAction func showTablePressed() {
         let tableVC = TableViewController()
         if let sheet = tableVC.sheetPresentationController {
             sheet.detents = [.medium(), .large()]
             sheet.prefersScrollingExpandsWhenScrolledToEdge = false
             sheet.prefersGrabberVisible = true
+            sheet.prefersEdgeAttachedInCompactHeight = true
         }
         present(tableVC, animated: true)
     }
