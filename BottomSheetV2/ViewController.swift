@@ -17,6 +17,7 @@ class ViewController: UIViewController {
             sheet.prefersGrabberVisible = true
             sheet.prefersEdgeAttachedInCompactHeight = true
             sheet.preferredCornerRadius = 20
+            sheet.largestUndimmedDetentIdentifier = .medium
         }
         present(tableVC, animated: true)
     }
