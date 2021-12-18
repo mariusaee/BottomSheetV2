@@ -16,6 +16,7 @@ class ViewController: UIViewController {
             sheet.prefersScrollingExpandsWhenScrolledToEdge = false
             sheet.prefersGrabberVisible = true
             sheet.prefersEdgeAttachedInCompactHeight = true
+            sheet.preferredCornerRadius = 20
         }
         present(tableVC, animated: true)
     }
